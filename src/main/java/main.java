@@ -9,8 +9,8 @@ public class main {
 
         int inputint = 1;
         String inputstr = "";
+        System.out.print("Enter S to sort a list of Strings or I to sort a list of Integers: ");
         String choice = in.nextLine();
-
         if (choice.equals("s") || choice.equals("S")){
             System.out.print("Enter an Strings to add to the list(Enter exit to quite): ");
 
@@ -93,7 +93,7 @@ public class main {
             for (int j = i+1; j< list.length; j++)
             {
 
-                if(list[i].compareTo(list[j])>0)
+                if(list[i].toLowerCase().compareTo(list[j].toLowerCase())>0)
                 {
 
                     String temp = list[i];

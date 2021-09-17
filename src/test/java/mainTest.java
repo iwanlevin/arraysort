@@ -13,5 +13,15 @@ class mainTest {
         Assertions.assertArrayEquals(ans, sortedarr);
 
     }
+
+    @Test
+    public void stringSort() {
+        boolean ordered = true;
+        String[] arr = {"Lemon", "Kiwi", "Apple", "Orange", "Watermelon", "Banana", "Peach", "plum", "strawberry"};
+        String[] sortedarr = new String[arr.length];
+        sortedarr = main.stringSort(arr);
+        String[] ans = {"Apple", "Banana","Kiwi", "Lemon", "Orange", "Peach", "plum", "strawberry", "Watermelon"};
+        Assertions.assertArrayEquals(ans, sortedarr);
+    }
 }
 

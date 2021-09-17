@@ -1,3 +1,3 @@
 # Array Sort
 
-This program sorts a given array by accepting an input in the console window. With the current feature set only a list  of integers  will  be sorted. This can be done by  running the main method and  then entering  your  list  of  integers  sequecially  once  your done  endter a -1 and the program will  sort the array of entered  numbers.
+This program sorts a given array by accepting an input in the console window. With the current feature set only a list  of integers  will  be sorted. This can be done by  running the main method and  then entering  your  list  of  integers  sequecially  once  your done  endter a -1 and the program will  sort the array of entered  numbers. With the most receent update  you  now have the choice of either sorting a  list  of strings or integers. By following the instructions printed out when the main method is run  you'll beable to choose one data type and sort a list  of that  type.

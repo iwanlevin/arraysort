@@ -57,7 +57,7 @@ public class main {
     }
 
 
-    public static int[] quickSort(int[] list, int li, int ui) {
+    public static int[] quickSort(int[] list, int li, int ui) { //Quick sort algorithm for sorting the integer array
         if (li < ui) {
             int pivot = list[ui];
             int i = (li - 1);

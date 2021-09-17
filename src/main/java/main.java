@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class main {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         ArrayList<Integer> list = new ArrayList<>();
@@ -22,11 +23,39 @@ public class main {
             arr[i] = x;
             i++;
         }
+        int[] sortedArray = quickSort(arr, 0, arr.length - 1);
 
+        System.out.print(Arrays.toString(sortedArray));
     }
 
 
-    public static int[] quicksort(int[] list,int li,int ui){
+
+    public static int[] quickSort(int[] list,int li,int ui){
+        if (li < ui) {
+            int pivot = list[ui];
+            int i = (li - 1);
+
+            for (int l = li; l <= ui - 1; l++)
+            {
+                if (list[l] < pivot)
+                {
+                    i++;
+                    int temp = list[i];
+                    list[i] = list[l];
+                    list[l] = temp;
+                }
+            }
+
+            int temp = list[i + 1];
+            list[i + 1] = list[ui];
+            list[ui] = temp;
+
+            int pi = (i + 1);
+
+            quickSort(list, li, pi - 1);
+            quickSort(list, pi + 1, ui);
+        }
+
         return list;
     }
 }
